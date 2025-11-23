@@ -18,7 +18,7 @@ app.use(
   })
 );
 
-app.options("*", cors());
+app.options("/", cors());
 
 app.use("/api/users", userRouter);
 app.use("/api/todos", todosRouter);
